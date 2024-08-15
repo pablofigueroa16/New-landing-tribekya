@@ -583,6 +583,9 @@ iframe {
         width: 20rem;
     }
 
+    .NombreDelServicio {
+        text-align: center;
+    }
 
     .flex-article {
         margin: 1rem;
