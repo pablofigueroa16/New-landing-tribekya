@@ -116,6 +116,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .flex-article {
@@ -566,14 +567,13 @@ iframe {
     margin-top: 1rem;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 800px) {
     .hero {
         flex-wrap: wrap;
-
     }
 
     .flex-aside {
-        margin: 0;
+        margin: 1rem;
         padding: 0;
         justify-content: start;
         height: 80vh;
@@ -585,7 +585,7 @@ iframe {
 
 
     .flex-article {
-        margin: 0;
+        margin: 1rem;
         padding: 0;
         height: 85vh;
 
