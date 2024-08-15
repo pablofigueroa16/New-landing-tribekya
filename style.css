@@ -680,6 +680,18 @@ iframe {
         margin: 1rem 0;
     }
 
+    .flex-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        button {
+            width: 12rem;
+        }
+    }
+
+
     .SaludoFinal {
         height: 70vh;
 
