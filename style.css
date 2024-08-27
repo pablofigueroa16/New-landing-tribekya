@@ -1,8 +1,12 @@
 :root {
-    --primary: #EB47AA;
-    --secondary: #EBF64E;
+    --primary: #eb47aa;
+    --secondary: #ebf64e;
     --bg: #131313;
     --text: #fff;
+}
+
+header {
+    width: 100%;
 }
 
 body {
@@ -15,12 +19,18 @@ body {
     width: 100%;
 }
 
+.logo {
+    width: 90px;
+    margin: 1.5rem;
+    justify-self: center;
+}
+
 svg {
     flex-shrink: 0;
 }
 
 h2 {
-    color: #EB47AA;
+    color: #eb47aa;
     font-size: 2rem;
     margin: 0;
     padding: 0;
@@ -77,6 +87,10 @@ li {
     background: #131313;
     color: #fff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .heroColor {
@@ -94,7 +108,7 @@ li {
 }
 
 .FajaDeFiltro {
-    font-size: clamp(.5rem, 3.2vw, 1.5rem)
+    font-size: clamp(0.5rem, 3.2vw, 1.5rem);
 }
 
 .NombreDelServicio {
@@ -130,7 +144,6 @@ li {
     height: 100vh;
 }
 
-
 .flex-aside {
     display: flex;
     flex-direction: column;
@@ -146,7 +159,7 @@ li {
     font-weight: 600;
     margin: 0;
     padding: 0;
-    color: #EBF64E;
+    color: #ebf64e;
 }
 
 .flex-li {
@@ -172,6 +185,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 1rem;
 }
 
@@ -211,7 +225,6 @@ li {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-
 }
 
 .flex-par {
@@ -227,8 +240,6 @@ li {
     justify-content: center;
     align-items: center;
     height: 2rem;
-
-
 }
 
 .no {
@@ -237,7 +248,7 @@ li {
 }
 
 .si {
-    background: #03D003;
+    background: #03d003;
     font-weight: 600;
 }
 
@@ -246,10 +257,8 @@ li {
 }
 
 .ProblemasCliente {
-    font-size: 2.2rem;
+    font-size: 25px;
 }
-
-
 
 .ListaDePilaresDelServicio {
     display: flex;
@@ -257,7 +266,7 @@ li {
     align-items: center;
     gap: 1rem;
     width: 100%;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     padding: 0;
 }
 
@@ -277,10 +286,6 @@ li {
     height: 3rem;
 }
 
-
-
-
-
 .Segunda-Seccion {
     display: flex;
     flex-direction: column;
@@ -296,16 +301,16 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
-    padding: 0 4rem;
+    padding: 1rem 2rem;
     background: #ffffff45;
     border-radius: 10px;
     height: 10rem;
 
     h3 {
-        font-size: clamp(.8rem, 3vw, 1.4rem);
-
+        font-size: clamp(0.8rem, 3vw, 1.4rem);
+        text-align: left;
     }
 }
 
@@ -317,12 +322,13 @@ li {
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+    font-size: 25px;
 
     h2 {
         color: var(--text);
+        font-size: 25px;
     }
 }
-
 
 .Tercera-Seccion {
     background: var(--bg);
@@ -333,7 +339,6 @@ li {
     align-items: center;
     width: 100%;
     min-height: 90vh;
-
 
     h2 {
         font-size: clamp(1.5rem, 3.5vw, 3rem);
@@ -384,13 +389,8 @@ li {
     align-items: center;
     border-radius: 10px;
     border: 2px solid #fff;
-    padding: .5rem;
-
+    padding: 0.5rem;
 }
-
-
-
-
 
 .Cuarta-Seccion {
     display: flex;
@@ -412,7 +412,6 @@ li {
     justify-content: center;
     align-items: center;
 
-
     h2 {
         font-size: 1.7rem;
         width: 100%;
@@ -429,7 +428,6 @@ li {
     flex-direction: column;
     align-items: center;
     color: var(--text);
-
 }
 
 .EtapasDelMétodo {
@@ -468,8 +466,19 @@ li {
     }
 }
 
+.ParaQuienEsContenedor {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232, 232, 232, 0.084);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
 .section-quien-icon {
-    height: 6rem;
+    height: fit-content;
     margin: 0;
     padding: 0;
 }
@@ -491,7 +500,6 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .Octava-Seccion {
@@ -528,13 +536,38 @@ li {
 }
 
 .TenésDosOpciones {
-    height: 60vh;
+    padding: 4rem 0 4rem 0;
+    height: fit-content;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.DosOpcionesContenedor {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgba(232, 232, 232, 0.084);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    h3 {
+        text-align: left;
+    }
+}
+
+.opcion {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.opcion-text {
+    font-weight: 200;
 }
 
 .Decima-Seccion {
@@ -558,6 +591,7 @@ li {
 
     h2 {
         color: var(--bg);
+        /* font-size: ; */
     }
 }
 
@@ -568,16 +602,17 @@ iframe {
     margin-top: 1rem;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     .hero {
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .flex-aside {
         margin: 1rem;
         padding: 0;
         justify-content: start;
-        height: 80vh;
+        height: fit-content;
     }
 
     .flex-li {
@@ -589,10 +624,15 @@ iframe {
     }
 
     .flex-article {
+        justify-content: flex-start;
+        gap: 1rem;
         margin: 1rem;
         padding: 0;
-        height: 85vh;
+        height: fit-content;
+    }
 
+    .PromesaCentral {
+        margin: 0rem;
     }
 
     .flex-ol {
@@ -603,14 +643,13 @@ iframe {
     .flex-pasos {
         width: 21rem;
         height: 4rem;
-
     }
 
     .contenedor {
         height: 12rem;
-        padding: 0 1rem;
+        padding: 0 2rem;
         margin-top: 1rem;
-
+        gap: 2rem;
     }
 
     .card {
@@ -632,11 +671,63 @@ iframe {
         margin: 1rem 0;
     }
 
+    .Tercera-Seccion {
+        min-height: fit-content;
+    }
+
+    .DeseosDelCliente {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 80%;
+        min-height: fit-content;
+        text-align: center;
+        margin-top: 2rem;
+
+        .DeseosFacts {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: fit-content;
+            gap: 15px;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                text-align: start;
+            }
+        }
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 10px;
+        background: #00000099;
+        width: 90%;
+        height: fit-content;
+
+        h3 {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    .ParaQuienEsContenedor {
+        width: 100%;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+
     .section-quien-icon {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        height: 2rem;
+        height: fit-content;
     }
 
     .section-quien-text {
@@ -649,7 +740,6 @@ iframe {
 
     .icon-quien {
         height: 1rem;
-
     }
 
     .ul-quien {
@@ -667,7 +757,6 @@ iframe {
 
         h2 {
             font-size: 1.7rem;
-
         }
     }
 
@@ -676,8 +765,13 @@ iframe {
     }
 
     .TenésDosOpciones {
-        height: 80vh;
+        height: fit-content;
         margin: 1rem 0;
+    }
+
+    .DosOpcionesContenedor {
+        width: 100%;
+        padding: 1.5rem 1rem 1.5rem 1rem;
     }
 
     .flex-button {
@@ -690,7 +784,6 @@ iframe {
             width: 12rem;
         }
     }
-
 
     .SaludoFinal {
         height: 70vh;
