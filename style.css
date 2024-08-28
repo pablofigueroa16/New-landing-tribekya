@@ -19,6 +19,14 @@ body {
     width: 100%;
 }
 
+.marcelo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
 .logo {
     width: 90px;
     margin: 1.5rem;
@@ -518,8 +526,9 @@ li {
 }
 
 .PresentaciónQuienSoy {
+    padding: 2rem;
     width: 80%;
-    height: 60vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -586,12 +595,13 @@ li {
 }
 
 .SaludoFinal {
+    padding: 2rem;
     display: flex;
     gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: fit-content;
     width: 80%;
 
     h2 {
@@ -766,9 +776,9 @@ iframe {
         }
     }
 
-    .PresentaciónQuienSoy {
+    /* .PresentaciónQuienSoy {
         height: 75vh;
-    }
+    } */
 
     .TenésDosOpciones {
         height: fit-content;
@@ -792,8 +802,6 @@ iframe {
     }
 
     .SaludoFinal {
-        height: 70vh;
-
         h2 {
             font-size: 1.7rem;
         }
