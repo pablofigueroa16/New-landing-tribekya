@@ -19,7 +19,18 @@ body {
     width: 100%;
 }
 
+.marce-contenedor {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff2c;
+    margin-bottom: 1.5rem;
+}
+
 .marcelo-img {
+    position: absolute;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -456,7 +467,7 @@ li {
 }
 
 .EtapasDelMétodo {
-    width: 80%;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -464,6 +475,20 @@ li {
     align-items: center;
     gap: 2rem;
     padding: 2rem 0 2rem 0;
+
+    h2 {
+        width: 80%;
+    }
+}
+
+.steps {
+    width: 50%;
+    min-width: 500px;
+    padding-right: 1rem;
+    /* aspect-ratio: 1; */
+}
+
+.steps-icon {
 }
 
 .Sexta-Seccion {
@@ -640,6 +665,11 @@ iframe {
 
     .logo {
         margin: 30px 0 15px 0;
+    }
+
+    .steps {
+        min-width: 280px;
+        width: 90%;
     }
 
     .flex-aside {
