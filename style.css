@@ -70,7 +70,17 @@ h4 {
     margin: 10px 0;
 }
 
-button {
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--secondary);
     color: var(--bg);
     border: 0;
@@ -78,12 +88,13 @@ button {
     height: 3rem;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
 }
 
 button:hover {
@@ -669,6 +680,10 @@ iframe {
 
     .steps {
         min-width: 280px;
+        width: 90%;
+    }
+
+    .buttonContainer {
         width: 90%;
     }
 
